@@ -1,5 +1,9 @@
+void settings() {
+  size(900,600);//multiples de 30  (30*20)
+}
+
 void setup() {
-size(900,600);//multiples de 30  (30*20)
+
 etat='a'; // état lors du lancement : acceuil
 
 //--------------------------------------------Initialisation des variables PImage-------------------------------------------------------------------------------------------------------------------
@@ -80,6 +84,3 @@ for(int k=0; k<nombreNiveaux; k++){ // fait une copie de l'etat des niveau pour 
  tabNiveaucopie[k][i][j]=tabNiveau[k][i][j];
 }}}
 }
-
-
-

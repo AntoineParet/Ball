@@ -34,7 +34,7 @@ void boutonNiveau(int xMin , int yMin , int numNiveau){
       initialisationNiveau();
       etat='j';
     }
-    if(numNiveau<10){
+    if(numNiveau<10){//pour centrer le txt en fonction du nombre de chiffres
       textSize(80);
       text(numNiveau,xMin+25,yMin+82);}
     else{
@@ -42,10 +42,10 @@ void boutonNiveau(int xMin , int yMin , int numNiveau){
       text(numNiveau,xMin+5,yMin+77);}
     popStyle();
     
-    if (etatNiveau[numNiveau]==1){
+    if (etatNiveau[numNiveau]==1){//si niveau réussi affiche tic
       image(tick,xMin+15,yMin+60,40,30);
     }
-    if (etatNiveau[numNiveau]==3){
+    if (etatNiveau[numNiveau]==3){//si niveau verrouillé
       image(cadenas_Locked,xMin+15,yMin+60,40,40);
     }
   }
@@ -151,4 +151,3 @@ void keyReleased() {
         if ( key == CODED ) {touchesCodees[keyCode] = false;}
         else {touches[key] = false;}
 }
-
